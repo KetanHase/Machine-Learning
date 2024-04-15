@@ -1,0 +1,9 @@
+import pandas as pd
+df=pd.read_csv("D:\Data_Folder\Modern\Desktop\Ketan\DataMLcategorical2.csv")
+from sklearn.preprocessing import LabelEncoder
+le=LabelEncoder()
+label=le.fit_transform(df['Country'])
+label
+df.drop("Country",axis=1,inplace=True)
+df["Country"]=label
+df
