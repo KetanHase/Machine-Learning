@@ -1,0 +1,5 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+iris=pd.read_csv("D:\Data_Folder\Modern\Desktop\Ketan\Iris1.csv")
+iris.head()
+iris.plot(kind="scatter",x="SepalLengthCm",y="SepalWidthCm")
